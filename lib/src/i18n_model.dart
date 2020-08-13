@@ -1161,6 +1161,8 @@ Map<String, dynamic> i18nObjInLocale(LocaleType type) {
       return _i18nModel['ko'];
     case LocaleType.kk:
       return _i18nModel['kk'];
+    case LocaleType.km:
+      return _i18nModel['km'];
     case LocaleType.ar:
       return _i18nModel['ar'];
     case LocaleType.tr:
