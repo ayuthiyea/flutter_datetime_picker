@@ -431,28 +431,29 @@ class _DatePickerState extends State<_DatePickerComponent> {
       decoration: BoxDecoration(
         color: theme.headerColor ?? theme.backgroundColor ?? Colors.white,
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          Container(
+      // child: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //   children: <Widget>[
+          // Container(
+          //   height: theme.titleHeight,
+          //   child: CupertinoButton(
+          //     pressedOpacity: 0.3,
+          //     padding: EdgeInsets.only(left: 16, top: 0),
+          //     child: Text(
+          //       '$cancel',
+          //       style: theme.cancelStyle,
+          //     ),
+          //     onPressed: () {
+          //       Navigator.pop(context);
+          //       if (widget.route.onCancel != null) {
+          //         widget.route.onCancel();
+          //       }
+          //     },
+          //   ),
+          // ),
+          child: Container(
             height: theme.titleHeight,
-            child: CupertinoButton(
-              pressedOpacity: 0.3,
-              padding: EdgeInsets.only(left: 16, top: 0),
-              child: Text(
-                '$cancel',
-                style: theme.cancelStyle,
-              ),
-              onPressed: () {
-                Navigator.pop(context);
-                if (widget.route.onCancel != null) {
-                  widget.route.onCancel();
-                }
-              },
-            ),
-          ),
-          Container(
-            height: theme.titleHeight,
+            width: double.infinity,
             child: CupertinoButton(
               pressedOpacity: 0.3,
               padding: EdgeInsets.only(right: 16, top: 0),
@@ -468,8 +469,8 @@ class _DatePickerState extends State<_DatePickerComponent> {
               },
             ),
           ),
-        ],
-      ),
+      //   ],
+      // ),
     );
   }
 
